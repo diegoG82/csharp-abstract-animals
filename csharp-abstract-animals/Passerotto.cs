@@ -1,7 +1,7 @@
 ﻿namespace csharp_abstract_animals
 {
 
-    class Passerotto : Animale, IVolante
+    class Passerotto : Animale, IVolante, IAzione
 
     {
         public Passerotto(string name) : base(name)
@@ -25,6 +25,11 @@
         public void Vola()
         {
             Console.WriteLine("Sto volando come un passerotto molto fiero!");
+        }
+
+        public void Nuota()
+        {
+            Console.WriteLine("I passerotti non sono waterproof!");
         }
 
     }

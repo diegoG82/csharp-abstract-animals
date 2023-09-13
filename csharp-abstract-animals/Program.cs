@@ -72,7 +72,7 @@ foreach (Animale animaleZoo in animali)
     if (animaleZoo is IVolante)
     {
         Console.WriteLine($"Io sono una {animaleZoo.GetType().Name}, mi chiamo {animaleZoo.GetName()} e posso volare!!!");
-      
+
     }
     else
     {
@@ -81,3 +81,12 @@ foreach (Animale animaleZoo in animali)
 
 }
 
+//CICLO SU IAzione
+
+foreach (IAzione animaleZoo in animali)
+{
+    Console.WriteLine();
+    Console.WriteLine($"Io sono una {animaleZoo.GetType().Name}");
+    animaleZoo.Nuota();
+    animaleZoo.Vola();
+}

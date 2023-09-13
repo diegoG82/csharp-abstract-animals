@@ -1,7 +1,7 @@
 ﻿namespace csharp_abstract_animals
 {
 
-    class Aquila : Animale, IVolante
+    class Aquila : Animale, IVolante, IAzione
 
     {
         public Aquila(string name) : base(name)
@@ -28,6 +28,12 @@
         {
             Console.WriteLine("Io posso volare come un'aquila cazzutissima!");
         }
+
+        public void Nuota()
+        {
+            Console.WriteLine("io non posso nuotare");
+        }
+          
 
     }
 }

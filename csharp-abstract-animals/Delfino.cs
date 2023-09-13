@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace csharp_abstract_animals
 {
-    class Delfino : Animale, INuotante
+    class Delfino : Animale, INuotante, IAzione
 
     {
         public Delfino(string name) : base(name)
@@ -30,6 +30,11 @@ namespace csharp_abstract_animals
 public void Nuota()
         {
             Console.WriteLine("Io posso Nuotare!");
+        }
+
+       public void Vola()
+        {
+            Console.WriteLine("I delfini nooooon vooolano");
         }
     }
 }

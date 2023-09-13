@@ -1,6 +1,6 @@
 ﻿namespace csharp_abstract_animals
 {
-    class Cane : Animale, INuotante
+    class Cane : Animale, INuotante, IAzione
 
     {
         public Cane(string name) : base(name)
@@ -26,6 +26,11 @@
         public void Nuota()
         {
             Console.WriteLine("Io posso Nuotare!");
+        }
+
+        public void Vola()
+        {
+            Console.WriteLine("I cani non volano ahime'");
         }
 
     }
