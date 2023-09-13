@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace csharp_abstract_animals
+﻿namespace csharp_abstract_animals
 {
 
-    class Passerotto : Animale
+    class Passerotto : Animale, IVolante
 
     {
         public Passerotto(string name) : base(name)
@@ -27,6 +21,10 @@ namespace csharp_abstract_animals
         public override void Verso()
         {
             Console.WriteLine("Il mio verso è Pas! Pas!");
+        }
+        public void Vola()
+        {
+            Console.WriteLine("Sto volando come un passerotto molto fiero!");
         }
 
     }

@@ -1,6 +1,6 @@
 ﻿namespace csharp_abstract_animals
 {
-    class Cane : Animale
+    class Cane : Animale, INuotante
 
     {
         public Cane(string name) : base(name)
@@ -21,6 +21,11 @@
         public override void Verso()
         {
             Console.WriteLine("Il mio verso e': Bau! Bau!");
+        }
+
+        public void Nuota()
+        {
+            Console.WriteLine("Io posso Nuotare!");
         }
 
     }
