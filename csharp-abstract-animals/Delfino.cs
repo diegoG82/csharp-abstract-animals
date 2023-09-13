@@ -21,11 +21,11 @@ namespace csharp_abstract_animals
 
         public override void CosaMangi()
         {
-            Console.WriteLine("mangio il granchio blu");
+            Console.WriteLine("IO Mangio il granchio blu");
         }
         public override void Verso()
         {
-            Console.WriteLine("Hic! Hic!");
+            Console.WriteLine("il mio verso e': Hic! Hic!");
         }
 
     }

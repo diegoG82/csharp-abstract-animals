@@ -27,7 +27,7 @@ namespace csharp_abstract_animals
 
             public override void Verso()
             {
-                Console.WriteLine("Chow Chow!!");
+                Console.WriteLine("Il mio verso e' Chow Chow!!");
             }
 
         }

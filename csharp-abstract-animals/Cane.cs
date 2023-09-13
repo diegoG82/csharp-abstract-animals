@@ -20,7 +20,7 @@
 
         public override void Verso()
         {
-            Console.WriteLine("Bau Bau");
+            Console.WriteLine("Il mio verso e': Bau! Bau!");
         }
 
     }
