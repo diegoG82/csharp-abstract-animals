@@ -31,26 +31,32 @@ foreach (Animale animaleZoo in animali)
 //IVolare
 aquila.Vola();
 passerotto.Vola();
+Console.WriteLine();
 
 
 //INuotante
 cane.Nuota();
 delfino.Nuota();
+Console.WriteLine();
 
 //METODO PER FARE VOLARE
+Console.WriteLine();
 static void FaiVolare(IVolante animale)
 {
     animale.Vola();
 }
 
+
 FaiVolare(passerotto);
 FaiVolare(aquila);
 
 //METODO PER FAR NUOTARE
+Console.WriteLine();
 static void FaiNuotare(INuotante animale)
 {
     animale.Nuota();
 }
+
 
 FaiNuotare(cane);
 FaiNuotare(delfino);
@@ -65,12 +71,12 @@ foreach (Animale animaleZoo in animali)
 {
     if (animaleZoo is IVolante)
     {
-        Console.WriteLine($"Io sono una {animaleZoo.GetType().Name} e mi chiamo {animaleZoo.GetName()} e posso volare!!!");
-        Console.Write($"Il mio motto e' {Vola()}")
+        Console.WriteLine($"Io sono una {animaleZoo.GetType().Name}, mi chiamo {animaleZoo.GetName()} e posso volare!!!");
+      
     }
     else
     {
-        Console.WriteLine($"Io sono una {animaleZoo.GetType().Name} e mi chiamo {animaleZoo.GetName()} e posso nuotare!!!");
+        Console.WriteLine($"Io sono una {animaleZoo.GetType().Name}, mi chiamo {animaleZoo.GetName()} e posso nuotare!!!");
     }
 
 }
